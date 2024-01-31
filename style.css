@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+}
+
+#page-logo {
+    width: 150px;
+    display: block;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#searchbarButton {
+    border-radius: 50px;
+    width: 150px;
+    height: 75px;
+    font-size: 20px;
+    color: white;
+    background-color: #6ec300;
+    border: 5px solid #009b00;
+    font-family: Space mono;
+}
+
+#searchInput {
+    font-family: Space mono;
+    border-radius: 30px;
+    width: 500px;
+    height: 75px;
+    border: 5px solid #009b00;
+    font-size: 30px;
+}
+
+.dot {
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.card-outside-image {
+    width: 450;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-logo {
+    width: 600px;
+}
+.card {
+    display:flex;
+    margin: 60px;
+    width: 500px;
+    height: 250px;
+    background-color: #6ec300;
+    border: 5px solid #009b00;
+}
+
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header h1 {
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #81df07; 
+    color: #00afd6;
+    font-family: rubik bubbles;
+}
+.content {
+    display: flex;
+    margin: 20px;
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(./images/FUNDO_3\ \(1\).jpg) no-repeat;
+    background-size:100% 100%;
+}
+
+.card-title {
+    font-size: 20px;
+    font-family: Space mono;
+}
+
+.card-status,
+.card-location,
+.card-episode {
+    font-size: 13px;
+    font-family: Martian Mono;
+}
+
+.dot-alive {
+    background-color: chartreuse;
+}
+
+.dot-dead {
+    background-color: red;
+}
+
+.dot-unknown {
+    background-color: gray;
+}
+
+.card-image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 4px solid #009b00 ;    
+}
+
+#pagination-container button{
+    margin: 40px;
+    width: 140px;
+    height: 80px;
+    border-radius: 25px;
+    font-size: 22px;
+    font-family: Space mono;
+    padding: 15px;
+    color: white;
+    background-color: #6ec300;
+    border: 5px solid #009b00;
+    cursor: pointer;
+    text-align: center;
+}
+
+.page-footer h2 {
+    font-family: Space mono;
+    position: relative;
+    display: block;
+    margin-top: 80px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.page-footer h3 {
+    margin-top: 200px;
+    font-family: Space mono;
+    color: white;
+    animation: changingColors 5s infinite;
+    animation-fill-mode: forwards;
+}
+
+#modalButton {
+    background-color:#6ec300;
+    border: 1px solid #009b00;
+    font-size: 15px;
+    width: 100px;
+}
+
+@keyframes dropshadows {
+    0% {
+        filter: drop-shadow(0px 0px 4px #6ec300);
+    }
+
+    25% {
+        filter: drop-shadow(0px 0px 8px #6ec300);
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 12px #6ec300);
+    }
+
+    75% {
+        filter: drop-shadow(0px 0px 16px #6ec300);
+    }
+
+    100% { 
+        filter: drop-shadow(0px 0px 20px #6ec300);
+    }
+}
+
+@keyframes changingColors {
+    0% {
+        color: white;
+    }
+
+    25% {
+        color: #81df07
+    }
+
+    50% {
+        color:#6ec300;
+    }
+
+    75% {
+        color: #027902;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+
+.image1 {
+    position: absolute;
+    animation: move 3s infinite;
+    width: 450px;
+}
+
+.image2 {
+    position: relative;
+    animation: rotate 3s infinite;
+    width: 500px;
+}
+
+@keyframes move {
+    0% {
+        width: 475px;
+    }
+
+    50% {
+        width: 500px;
+    }
+
+    100% {
+        width: 525px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal-content {
+    background: url(./images/starry-night-sky.jpg);
+    background-size: contain;
+    filter: drop-shadow(0px 0px 17px #81df07);
+}
+
+.modal-text-header {
+    font-size: 20px;
+    color: #81df07;
+    font-family: Space mono;
+}
+
+.modal-text {
+    font-size: 13px;
+    font-family: Martian Mono;
+    color: #81df07;
+}
